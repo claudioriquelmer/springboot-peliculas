@@ -13,7 +13,7 @@
 						<a class="nav-link active" aria-current="page" href="/home">Catalogo</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/pelicula">Nueva Peliculas</a>
+						<a class="nav-link" href="/pelicula">Nueva Pelicula</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="/listado">Administrar</a>
@@ -22,4 +22,7 @@
 			</div>
 		</div>
 	</nav>
+	<div th:if="${msj != null}" th:text="${msj}" th:class="${tipoMsj != null ? 'alert alert-' + tipoMsj : 'alert'}">
+
+	</div>
 </header>
